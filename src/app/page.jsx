@@ -1,3 +1,4 @@
+import Discount from '@/components/Discount'
 import Featured from '@/components/Featured'
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
@@ -15,6 +16,7 @@ const page = () => {
       <Hero/>
       <Info />
       <Featured />
+      <Discount/>
       <NewBooks/>
       <Testimonials/>
       <Links />
