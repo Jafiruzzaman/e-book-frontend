@@ -98,11 +98,11 @@ const Featured = () => {
         <h2 className="text-3xl xl:text-5xl font-semibold text-blackPrimary mb-7 text-center font-montagu-slab">
           Featured Books
         </h2>
-        <div className="gap-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        <div className="xl:gap-8 gap-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {FeaturedBooks.map((item, index) => {
             return (
               <div
-                className="bg-white rounded-md hover:shadow-md flex items-center flex-col gap-4 py-8 cursor-pointer"
+                className="bg-white rounded-md hover:shadow-md flex items-center flex-col gap-4 py-8  px-6 cursor-pointer"
                 key={index}
               >
                 <Image
@@ -124,7 +124,7 @@ const Featured = () => {
                     </span>
                   </div>
                   {/* buttons */}
-                  <Button btnText={`add to cart`} btnStyle={`w-fit text-center mx-auto`}/>
+                  <Button btnText={`add to cart`} btnStyle={`w-fit text-center my-4 mx-auto`}/>
                 </div>
               </div>
             );
