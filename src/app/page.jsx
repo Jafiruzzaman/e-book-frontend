@@ -12,6 +12,7 @@ const page = () => {
   return (
     <>
       <Header />
+      <Hero/>
       <Info />
       <Featured />
       <NewBooks/>

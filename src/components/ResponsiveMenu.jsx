@@ -31,7 +31,7 @@ const links = [
 ]
 const ResponsiveMenu = ({showMenu}) => {
   return (
-    <nav className={`${showMenu ? "-left-0":"-left-[100%]"} px-4 py-6 transition-all duration-300  top-0 bg-white w-[50%] h-full absolute`}>
+    <nav className={`${showMenu ? "-left-0":"-left-[100%]"} z-50  px-4 py-6 transition-all duration-300  top-0 bg-white w-[50%] h-[100vh] absolute`}>
       {/* logo */}
       <div className="flex items-center justify-between ">
       <div className="flex items-center gap-1 text-xl text-bluePrimary font-medium capitalize cursor-pointer">

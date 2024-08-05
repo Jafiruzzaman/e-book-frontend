@@ -4,6 +4,12 @@
 
 @layer base {
   body{
-    @apply font-montserrat bg-purple-50
+    @apply font-montserrat bg-purple-50;
+  }
+  h1{
+    @apply font-montagu-slab text-blackPrimary text-3xl xl:text-8xl font-bold;
+  }
+  p{
+    @apply text-sm xl:text-lg text-textPrimary 
   }
 }
