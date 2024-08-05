@@ -29,7 +29,7 @@ const DesktopNav = () => {
       {
         links.map((link,index)=>{
           return (
-            <Link key={index} href={""} className='text-blackPrimary text-lg capitalize hover:text-bluePrimary'>
+            <Link key={index} href={""} className='text-blackPrimary text-lg capitalize hover:text-bluePrimary font-medium'>
             {link.name}
             </Link>
           )
