@@ -45,20 +45,24 @@ const Links = () => {
         </div>
         {/* contact  */}
         <div className="flex flex-col gap-2">
-          <h4 className="text-2xl font-montagu-slab capitalize font-medium">contact</h4>
+          <h4 className="text-2xl font-montagu-slab capitalize font-medium">
+            contact
+          </h4>
           <p>sector 11,Uttara, Dhaka Bangladesh</p>
           <p>ebook@gmail.com</p>
           <p>+880 1950-xxxxx</p>
         </div>
         {/* social icons */}
-        <div >
-        <div className="">
-        <h4 className="text-2xl font-montagu-slab capitalize font-medium">socials</h4>
-        </div>
+        <div>
+          <div className="">
+            <h4 className="text-2xl font-montagu-slab capitalize font-medium">
+              socials
+            </h4>
+          </div>
           <div className="flex items-center gap-2 text-bluePrimary my-4 text-2xl">
-          <IoLogoLinkedin />
-          <FaInstagram />
-          <IoLogoTwitter/>
+            <IoLogoLinkedin />
+            <FaInstagram />
+            <IoLogoTwitter />
           </div>
         </div>
       </div>

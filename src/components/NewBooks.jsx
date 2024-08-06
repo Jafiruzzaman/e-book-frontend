@@ -72,42 +72,47 @@ const newBooksList = [
   },
 ];
 const NewBooks = () => {
-  return <section className="container mx-auto p-4">
-  <h2 className="text-3xl xl:text-5xl font-semibold text-blackPrimary mb-7 capitalize text-center font-montagu-slab">
-          new Books
-        </h2>
-    <div className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3">
-      {
-        newBooksList.map((item,index)=>{
-          return(
-            <div className="bg-white p-5 flex gap-6 items-center  rounded transition-all duration-300 cursor-pointer hover:-translate-y-2" key={index}>
-            <div className="">
-              <Image  src={item.img} alt="book image"/>
-            </div>
-            <div className="flex  items-start gap-4 flex-col py-4">
-              <h3 className="text-2xl font-montagu-slab capitalize text-blackPrimary font-medium">{item.name}</h3>
-              <div className="flex items-center gap-12">
-              <span className="font-medium text-bluePrimary">
-                      {item.discountPrice}
-                    </span>
-                    <span className="line-through  text-gray-500">
-                      {item.price}
-                    </span>
+  return (
+    <section className="container mx-auto p-4">
+      <h2 className="text-3xl xl:text-5xl font-semibold text-blackPrimary mb-7 capitalize text-center font-montagu-slab">
+        new Books
+      </h2>
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3">
+        {newBooksList.map((item, index) => {
+          return (
+            <div
+              className="bg-white p-5 flex gap-6 items-center  rounded transition-all duration-300 cursor-pointer hover:-translate-y-2"
+              key={index}
+            >
+              <div className="">
+                <Image src={item.img} alt="book image" />
               </div>
-              <div className="flex items-center gap-1 text-lg text-bluePrimary">
-              <IoIosStar />
-              <IoIosStar />
-              <IoIosStar />
-              <IoIosStar />
-<IoIosStarHalf />
+              <div className="flex  items-start gap-4 flex-col py-4">
+                <h3 className="text-2xl font-montagu-slab capitalize text-blackPrimary font-medium">
+                  {item.name}
+                </h3>
+                <div className="flex items-center gap-12">
+                  <span className="font-medium text-bluePrimary">
+                    {item.discountPrice}
+                  </span>
+                  <span className="line-through  text-gray-500">
+                    {item.price}
+                  </span>
+                </div>
+                <div className="flex items-center gap-1 text-lg text-bluePrimary">
+                  <IoIosStar />
+                  <IoIosStar />
+                  <IoIosStar />
+                  <IoIosStar />
+                  <IoIosStarHalf />
+                </div>
               </div>
             </div>
-            </div>
-          )
-        })
-      }
-    </div>
-  </section>;
+          );
+        })}
+      </div>
+    </section>
+  );
 };
 
 export default NewBooks;

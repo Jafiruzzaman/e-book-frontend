@@ -124,16 +124,21 @@ const Featured = () => {
                     </span>
                   </div>
                   {/* buttons */}
-                  <Button btnText={`add to cart`} btnStyle={`w-fit text-center my-4 mx-auto`}/>
+                  <Button
+                    btnText={`add to cart`}
+                    btnStyle={`w-fit text-center my-4 mx-auto`}
+                  />
                 </div>
               </div>
             );
           })}
-          
         </div>
-          <div className="text-center mx-auto my-12">
-          <Button btnText={`explore more`} btnStyle={`my-8 hover:-translate-y-2 transition-all duration-200`}/>
-          </div>
+        <div className="text-center mx-auto my-12">
+          <Button
+            btnText={`explore more`}
+            btnStyle={`my-8 hover:-translate-y-2 transition-all duration-200`}
+          />
+        </div>
       </section>
     </>
   );

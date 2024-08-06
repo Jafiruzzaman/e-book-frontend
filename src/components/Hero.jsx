@@ -12,12 +12,15 @@ const Hero = () => {
         <h1 className="h1 md:text-left text-center xl:text-7xl mx-auto md:text-5xl md:max-w-[40rem] md:mb-5 text-[2.2rem] mb-3 capitalize max-w-[18rem] xl:max-w-[36rem] ">
           browse & select e-books
         </h1>
-        <p className=" xl:max-w-[26rem] md:max-w-[32rem] leading-[1.6]  my-2 capitalize text-center mx-auto">
+        <p className=" xl:max-w-[26rem] md:max-w-[32rem] leading-[1.6]  my-2 capitalize text-center xl:text-left xl:mx-0 mx-auto">
           find the best e-books from your favorite writers, explore hundreds of
           books with all possible categories, take advantage of the 50% discount
           and much more.
         </p>
-        <Button btnText={`explore more`} btnStyle={`transition-all duration-200 hover:-translate-y-2`}/>
+        <Button
+          btnText={`explore more`}
+          btnStyle={`transition-all duration-200 hover:-translate-y-2`}
+        />
       </div>
       {/* image */}
       <div className="flex items-center md:gap-8 gap-4  xl:gap-12 order-1 xl:order-2">
